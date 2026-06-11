@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floriografi Butik - Profesyonel Çiçek Satış ve Anlamları</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <canvas id="petal-canvas"></canvas>
+
+    <header>
+        <div class="header-container">
+            <button id="menu-toggle" class="nav-btn">☰ Menü</button>
+            <h1>🌸 Floriografi Butik</h1>
+            <button id="theme-toggle" class="nav-btn">🌓 Tema</button>
+        </div>
+    </header>
+
+    <div class="main-layout">
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-section">
+                <h3>🔍 Katalogda Ara</h3>
+                <input type="text" id="search-input" placeholder="Çiçek veya anlam ara...">
+            </div>
+
+            <div class="sidebar-section">
+                <h3>📊 Sıralama</h3>
+                <select id="sort-select">
+                    <option value="default">Varsayılan</option>
+                    <option value="price-asc">Fiyat: Düşükten Yükseğe</option>
+                    <option value="price-desc">Fiyat: Yüksekten Düşüğe</option>
+                </select>
+            </div>
+
+            <div class="sidebar-section">
+                <form class="flower-form" id="flower-form">
+                    <h3 id="form-title">Yeni Çiçek Ekle</h3>
+                    <input type="hidden" id="flower-id">
+                    <input type="text" id="flower-name" placeholder="Çiçek Adı" required>
+                    <input type="text" id="flower-meaning" placeholder="Anlamı" required>
+                    <input type="number" id="flower-price" placeholder="Fiyat (TL)" required>
+                    <button type="submit" id="submit-btn">Kataloğa Ekle</button>
+                </form>
+            </div>
+        </aside>
+
+        <div class="content-area">
+            <div id="loader">🌸 Çiçek dünyası yükleniyor...</div>
+            <main class="flower-grid" id="flower-grid"></main>
+        </div>
+    </div>
+
+    <div id="toast">İşlem Başarılı!</div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>Hakkımızda</h4>
+                <p>Floriografi Butik olarak, çiçeklerin asırlardır taşıdığı gizli dilleri ve anlamları modern tasarımlarla buluşturuyoruz. Her duyguya bir çiçek, her çiçeğe bir anlam katıyoruz.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Hızlı Menü</h4>
+                <ul>
+                    <li><a href="#">Ana Sayfa</a></li>
+                    <li><a href="#">Çiçeklerimiz</a></li>
+                    <li><a href="#">Anlamlar Sözlüğü</a></li>
+                    <li><a href="#">Sıkça Sorulan Sorular</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>İletişim Bilgileri</h4>
+                <p>📍 <strong>Adres:</strong> Çiçekli Mahallesi, Karanfil Sokak No:21, İstanbul</p>
+                <p>📞 <strong>Telefon:</strong> +90 (212) 555 21 21</p>
+                <p>✉️ <strong>E-Posta:</strong> destek@floriografibutik.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2026 Floriografi Butik. Tüm Hakları Saklıdır. | Web Tasarım Ödevi Projesi
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
