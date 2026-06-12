@@ -18,7 +18,6 @@ Bu proje, **Web Tasarım** dersi dönem ödevi kapsamında, belirlenen tüm zoru
 
 ## Teknik İsterlerin Karşılanma Durumu
 
-Proje, ödev kılavuzunda yer alan zorunlu ve ekstra puanlı tüm maddeleri %100 karşılamaktadır:
 
 ### 🔹 Zorunlu Yapılar
 1. **Fetch API & Async / Await:** `script.js` içerisinde asenkron mimari kullanılarak `JSONPlaceholder API` entegrasyonu simüle edilmiş, veriler asenkron akışla çekilmiştir.
